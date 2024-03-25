@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-BpxTcVhz7ug93GdLxS+Y3Sx3OZln24IWId9U6/zARcWtnyRMvoCT7k1Hp8s0Q39m9YsMwwZeqHs0GUZT1JTVeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0f0f0f;
+        color: #fff;
+    }
+
+    .login-container {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.1);
+        width: 350px;
+        margin: 50px auto;
+        padding: 40px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .login-container h2 {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        background-color: transparent;
+        color: #fff;
+        font-size: 16px;
+        outline: none;
+        transition: border-bottom 0.3s ease;
+    }
+
+    .login-container input[type="text"]:focus,
+    .login-container input[type="password"]:focus {
+        border-bottom: 2px solid #fff;
+    }
+
+    .login-container input[type="submit"] {
+        width: 100%;
+        background-color: #007bff;
+        color: #fff;
+        padding: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        outline: none;
+        transition: background-color 0.3s ease;
+    }
+
+    .login-container input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .login-container .signup-link {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .login-container .signup-link a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .login-container .signup-link a:hover {
+        color: #0056b3;
+    }
+
+    .social-icons {
+        margin-top: 30px;
+    }
+
+    .social-icons a {
+        color: #fff;
+        font-size: 24px;
+        margin: 0 10px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #007bff;
+    }
+</style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Welcome Back</h2>
+    <form id="loginForm">
+        <input type="text" name="email" id="email" placeholder="Email" required><br>
+        <input type="password" name="password" id="password" placeholder="Password" required><br>
+        <input type="submit" value="Log in">
+        <p class="signup-link">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+</div>
+</body>
+</html>
