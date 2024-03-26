@@ -5,16 +5,24 @@ body{
 }
 
 
-.galada-regular {
-    font-family: "Galada", cursive;
+.poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
-.poppins-regular-italic {
+
+  .poppins-black {
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-  }  
+    font-weight: 900;
+    font-style: normal;
+  }
+
 
 #header-principal{
     width: 100%;
@@ -104,7 +112,7 @@ body{
 
 
 
-.container{
+.container1{
 
     display: flex; 
     justify-content: space-between; 
@@ -124,7 +132,7 @@ body{
 }
 
 
-.container h2{
+.container1 h2{
     text-align: center;
     margin-bottom: 50px;
 }
@@ -132,6 +140,22 @@ body{
 .container2 h2{
     text-align: center;
     margin-bottom: 50px;
+}
+
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1{
+    width: 7%; 
+    padding-right: 20px;
+}
+
+.icon2{
+    width: 7%;
+    padding-left: 20px;
 }
 /*.box {
     flex: 1;
@@ -148,7 +172,7 @@ body{
 #section-one h1{
     text-align: center; 
     font-size: 70px;
-    font-family: 'Galada';
+    font-family: 'Poppins';
     color: white;
 }
 
@@ -176,6 +200,25 @@ body{
 .vm button{
     width: 200px;
     height: 50px;
+    border-radius: 10px;
+    background-color: #af4c65;
+    color: white;
+}
+
+.vm-af{
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position:inherit;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.vm-af button{
+    width: 250px;
+    font-size: 20px;
+    height: 70px;
     border-radius: 10px;
     background-color: #af4c65;
     color: white;
