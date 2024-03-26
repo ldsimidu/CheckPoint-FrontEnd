@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #center {
+        text-align: center;
+        background-color: #af4c65;
+        border-radius: 1000px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <header>
+        <img src="" class="bordasArredondadas">
+      <h2 id="center">Questinário sobre vinhos</h2>
+      <h4>
+        Responda esse questionario para que voce tenha uma experiencia mais
+        adaptada ao seu gosto pessoal
+      </h4>
+    </header>
+    <section>
+    <form action="/submit-your-answers" method="post">
+      <p>
+        1. Qual é o seu tipo de vinho preferido? (Tinto, Branco, Rosé,
+        Espumante)
+      </p>
+      <input type="text" name="vinhofavorito" />
+
+      <p>2. Você prefere vinhos de qual país?</p>
+      <input type="text" name="paispreferido" />
+
+      <p>3. Qual é a sua faixa de preço favorita para uma garrafa de vinho?</p>
+      <input type="text" name="faixadepreco" />
+
+      <p>
+        4. Você tem alguma uva favorita? (ex: Cabernet Sauvignon, Merlot,
+        Chardonnay)
+      </p>
+      <input type="text" name="uvafavorita" />
+
+      <p>5. Você prefere vinhos jovens ou envelhecidos?</p>
+      <input type="text" name="idadevinho" />
+
+      <p>
+        6. Qual é a sua região vinícola favorita? (ex: Bordeaux, Napa Valley)
+      </p>
+      <input type="text" name="regiaofavorita" />
+
+      <p>7. Você gosta de experimentar vinhos de pequenos produtores?</p>
+      <input type="text" name="pequenosprodutores" />
+
+      <p>8. Qual é a sua opinião sobre vinhos naturais?</p>
+      <input type="text" name="opiniaovinho" />
+
+      <p>
+
+
+      <br /><br />
+      <input type="submit" value="Enviar Respostas" />
+    </section>
+    </form>
+  </body>
+</html>
