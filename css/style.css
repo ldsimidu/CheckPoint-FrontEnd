@@ -29,6 +29,7 @@ body{
 #nav-img{
     width: 3%;
     padding-right: 1250px;
+    padding-left: 150px;
     margin-bottom: 50px;
 }
 
@@ -67,6 +68,9 @@ body{
 #navbar a {
     text-decoration: none;
     color: wheat;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 #navbar a:hover{
@@ -74,6 +78,17 @@ body{
     color: white;
 
 }
+
+
+.img-user{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+
 .header-principal{
     position: relative;
     width: 100%;
@@ -113,6 +128,12 @@ body{
     margin-top: 200px;
     
 }
+
+
+
+
+/*----------------------------------------------A PARTIR DA SECTION-ONE*----------------------------------------------*/
+
 
 
 
@@ -230,7 +251,6 @@ body{
 
 a.fill-div {
     box-shadow: 5px 10px #af4c65;
-
     text-decoration: none;
     display: block;
     flex: 1;
