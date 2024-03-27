@@ -6,6 +6,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-qui.css">
 
     <link rel="shortcut icon" type="imagex/png" href="../img/logo.png">
 
@@ -27,64 +28,63 @@
   <body>
     <header>
 
-        <nav id="navbar">
-            <img id="nav-img" src="../img/icons/wine-glass.png" alt="wine">
-            <ul>
-                <li><a href="../connected-index/connect-index.html"> <img class="img-user" src="../img/icons/home.png" alt="Foto de Usuário">Home</a></li>
-                <li><a href="../main-index/sac.html"> <img class="img-user" src="../img/icons/customer.png" alt="Foto de SAC"> SAC</a></li>
-                <li><a href="../connected-index/connect-quiz.html"><img class="img-user" src="../img/icons/quiz.png" alt="Foto de Quiz">Quiz </a></li>
-                <li><a href="../connected-index/logged.html"> <img class="img-user" src="../img/icons/user.png" alt="Foto de Usuário"> Usuário </a></li>
-            </ul>
-        </nav>
+      <nav id="navbar">
+        <img id="nav-img" src="../img/icons/wine-glass.png" alt="wine">
+        <ul>
+            <li><a href="../connected-index/connect-index.html"> <img class="img-user" src="../img/icons/home.png" alt="Foto de Usuário">Home</a></li>
+            <li><a href="../connected-index/connect-sac.html"> <img class="img-user" src="../img/icons/customer.png" alt="Foto de SAC"> SAC</a></li>
+            <li><a href="../connected-index/connect-quiz.html"><img class="img-user" src="../img/icons/quiz.png" alt="Foto de Quiz">Quiz </a></li>
+            <li><a href="../connected-index/logged.html"> <img class="img-user" src="../img/icons/user.png" alt="Foto de Usuário"> Usuário </a></li>
+        </ul>
+      </nav>
 
+
+      <section>
         <img src="" class="bordasArredondadas">
-      <h2 id="center">Questinário sobre vinhos</h2>
-      <h4>
-        Responda esse questionario para que voce tenha uma experiencia mais
-        adaptada ao seu gosto pessoal
-      </h4>
-    </header>
-    <section>
-    <form action="/submit-your-answers" method="post">
-      <p>
-        1. Qual é o seu tipo de vinho preferido? (Tinto, Branco, Rosé,
-        Espumante)
-      </p>
-      <input type="text" name="vinhofavorito" />
-
-      <p>2. Você prefere vinhos de qual país?</p>
-      <input type="text" name="paispreferido" />
-
-      <p>3. Qual é a sua faixa de preço favorita para uma garrafa de vinho?</p>
-      <input type="text" name="faixadepreco" />
-
-      <p>
-        4. Você tem alguma uva favorita? (ex: Cabernet Sauvignon, Merlot,
-        Chardonnay)
-      </p>
-      <input type="text" name="uvafavorita" />
-
-      <p>5. Você prefere vinhos jovens ou envelhecidos?</p>
-      <input type="text" name="idadevinho" />
-
-      <p>
-        6. Qual é a sua região vinícola favorita? (ex: Bordeaux, Napa Valley)
-      </p>
-      <input type="text" name="regiaofavorita" />
-
-      <p>7. Você gosta de experimentar vinhos de pequenos produtores?</p>
-      <input type="text" name="pequenosprodutores" />
-
-      <p>8. Qual é a sua opinião sobre vinhos naturais?</p>
-      <input type="text" name="opiniaovinho" />
-
-      <p>
-
-
-      <br /><br />
-      <input type="submit" value="Enviar Respostas" />
-    </section>
-    </form>
+        <h2 id="center">Questinário sobre vinhos</h2>
+        <h4>
+          Responda esse questionario para que voce tenha uma experiencia mais
+          adaptada ao seu gosto pessoal
+        </h4>
+      
+      <form action="/submit-your-answers" method="post">
+        <p>1. Você já experimentou vinho antes?</p>
+        <input type="text" name="vinhofavorito" />
+  
+        <p>2. Você prefere bebidas mais suaves ou mais fortes?</p>
+        <input type="text" name="paispreferido" />
+  
+        <p>3. Você gostaria de um vinho para acompanhar uma refeição ou apenas para desfrutar por si só?</p>
+        <input type="text" name="faixadepreco" />
+  
+        <p>
+          4. Você tem alguma preferência de cor para o vinho? (Vermelho, branco, rosé ou espumante)
+        </p>
+        <input type="text" name="uvafavorita" />
+  
+        <p>5. Você tem alguma preferência de sabor? (Doce, seco ou em algum ponto intermediário)</p>
+        <input type="text" name="idadevinho" />
+  
+        <p>
+          6. Qual é o máximo que você está disposto a gastar em uma garrafa de vinho?
+        </p>
+        <input type="text" name="regiaofavorita" />
+  
+        <p>7. Você está comprando o vinho para uma ocasião especial ou é para consumo regular?</p>
+        <input type="text" name="pequenosprodutores" />
+  
+        <p>8. Qual é a sua opinião sobre vinhos naturais?</p>
+        <input type="text" name="opiniaovinho" />
+  
+        <p>
+  
+  
+        <br /><br />
+        <input type="submit" value="Enviar Respostas" />
+          </form>
+        </header>
+      </section>
+        
     <br><br><br>
     <footer>
       <p style="font-size: 15px; text-align: center;">Todos os diretos Vinheria Agnello</p>
