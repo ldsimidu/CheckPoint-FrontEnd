@@ -220,6 +220,8 @@ body{
     position:inherit;
     font-size: 15px;
     text-align: center;
+    display: block;
+    flex: 1;
 }
 
 .vm button{
@@ -228,6 +230,8 @@ body{
     border-radius: 10px;
     background-color: #af4c65;
     color: white;
+    display: block;
+    flex: 1;
 }
 
 .vm-af{
@@ -237,6 +241,8 @@ body{
     position:inherit;
     font-size: 25px;
     text-align: center;
+    display: block;
+    flex: 1;
 
 }
 
@@ -247,6 +253,8 @@ body{
     border-radius: 10px;
     background-color: #af4c65;
     color: white;
+    display: block;
+    flex: 1;
 }
 
 a.fill-div {
