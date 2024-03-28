@@ -30,7 +30,7 @@ Destinado no arquivo "main-index/login.html", na página de login fizemos uma p�
 
 <hr>
 
-# 🗂️🔸 Páginas dedicadas para a Conta do Usuário do Site 🔸🗂️
+# 🗂️🔸 Páginas para a Conta do Usuário do Site 🔸🗂️
 
 ## 🔻 Pasta Connected-index 🔻
 A pasta "connected-index" possui um clone de todas as pastas do "main-index", porém com seu diferencial de serem dedicadas para quando um usuário entra em sua conta nas abas "main-index/signup.html" ou "main-index/login.html", assim movendo para as novas páginas desta pasta dedicada, excluindo as abas "SignUp" e "LogIn" e adicionando a aba "Usuário".
@@ -40,7 +40,7 @@ Na nova aba "Usuário", com o arquivo destinado "connected-index/logged.html", �
 
 <hr>
 
-# 🗂️🔹 Pastas dedicadas do CSS e interface gráfica do Site 🔹🗂️
+# 🗂️🔹 Pastas do CSS e interface gráfica do Site 🔹🗂️
 
 ## 🟦 Pasta CSS 🟦
 A pasta onde se localiza toda a interface personalizada de todos os sites está na pasta "CSS", onde existem diversos arquivos CSS, como: "style-sig.css", "style-log.css", "style-sac.css", "style-qui.css", que foram criados e personalizados para cada um de seus arquivos HTML tanto nas pastas "main-index" e "connected-index", porém o arquivo CSS que é inserido em TODOS os arquivos é o "style.css", que possui características que todos os arquivos precisam.
