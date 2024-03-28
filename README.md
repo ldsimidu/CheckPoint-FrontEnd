@@ -2,7 +2,7 @@
 
 Primeiro CheckPoint de FrontEnd. Integrantes: Lucas, Caio Felipe, Nicolas, Ricardo e Gabriel Terra.
 
-
+<hr>
 index.html - Home da Página, onde se localiza os produtos
 
 sac.html - é a seção dedicada exclusivamente ao atendimento ao cliente em nosso site. Este espaço visa fornecer 
