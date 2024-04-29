@@ -49,44 +49,48 @@
       </h4>
     
     <form action="/submit-your-answers" method="post">
-      <p>
-        1. Você já experimentou vinho antes?
-      </p>
-      <input type="text" name="ExperimentouVinho" />
+      <div id="perguntas">
+        <p>
+          1. Você já experimentou vinho antes?
+        </p>
+        <input type="text" placeholder="Escreva aqui..." name="ExperimentouVinho" class="input">
 
-      <p>2. Você prefere bebidas mais suaves ou mais fortes?</p>
-      <input type="text" name="VinhoSuaveForte" />
+        <p>2. Você prefere bebidas mais suaves ou mais fortes?</p>
+        <input type="text" placeholder="Escreva aqui..." name="VinhoSuaveForte" class="input">
 
-      <p>3. Você gostaria de um vinho para acompanhar uma refeição ou apenas para desfrutar por si só?</p>
-      <input type="text" name="Refeição" />
+        <p>3. Você gostaria de um vinho para acompanhar uma refeição ou apenas para desfrutar por si só?</p>
+        <input type="text" placeholder="Escreva aqui..." name="Refeição" class="input">
 
-      <p>
-        4. Você tem alguma preferência de cor para o vinho? (Vermelho, branco, rosé ou espumante)
-      </p>
-      <input type="text" name="CorVinho" />
+        <p>
+          4. Você tem alguma preferência de cor para o vinho? (Vermelho, branco, rosé ou espumante)
+        </p>
+        <input type="text" placeholder="Escreva aqui..." name="CorVinho" class="input">
 
-      <p>5. Você tem alguma preferência de sabor? (Doce, seco ou em algum ponto intermediário)</p>
-      <input type="text" name="SaborVinho" />
+        <p>5. Você tem alguma preferência de sabor? (Doce, seco ou em algum ponto intermediário)</p>
+        <input type="text" placeholder="Escreva aqui..." name="SaborVinho" class="input">
 
-      <p>
-        6. Qual é o máximo que você está disposto a gastar em uma garrafa de vinho?
-      </p>
-      <input type="text" name="FaixaPreço" />
+        <p>
+          6. Qual é o máximo que você está disposto a gastar em uma garrafa de vinho?
+        </p>
+        <input type="text" placeholder="Escreva aqui..." name="FaixaPreço" class="input">
 
-      <p>7. Você tem alguma restrição alimentar que devemos considerar ao escolher um vinho?</p>
-      <input type="text" name="restrição" />
+        <p>7. Você tem alguma restrição alimentar que devemos considerar ao escolher um vinho?</p>
+        <input type="text" placeholder="Escreva aqui..." name="restrição" class="input">
 
-      <p>8. Você está comprando o vinho para uma ocasião especial ou é para consumo regular?</p>
-      <input type="text" name="ocasião" />
-
-      <p>
-
+        <p>8. Você está comprando o vinho para uma ocasião especial ou é para consumo regular?</p>
+        <input type="text" placeholder="Escreva aqui..." name="ocasião" class="input">
+      </div>
 
       <br /><br />
-      <input type="submit" value="Enviar Respostas" />
+      <button class="submit">
+        Enviar
+        <svg fill="white" viewBox="0 0 448 512" height="1em" class="arrow">
+          <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path>
+        </svg>
+      </button>
     </form>
   </header>
-    </section>
+</div>
         
     <br><br><br>
     <footer>
