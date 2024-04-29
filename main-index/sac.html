@@ -22,12 +22,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Galada&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-  </style>
-
+ 
 
 </head>
 
@@ -56,7 +51,7 @@
       <form>
         
         <div class="wave-grupo">
-          <input required="" type="text" class="input">
+          <input required="" type="text" class="wave-input">
           <span class="bar"></span>
           <label class="label">
             <span class="label-char" style="--index: 0">N</span>
@@ -68,7 +63,7 @@
 
 
         <div class="wave-grupo">
-          <input required="" type="text" class="input">
+          <input required="" autocomplete="on" type="text" class="wave-input" type="email" id="Email">
           <span class="bar"></span>
           <label class="label">
             <span class="label-char" style="--index: 0">E</span>
@@ -79,17 +74,20 @@
           </label>
         </div>
 
-        <div class="div-n">Mensagem:</div>
-        <textarea id="mensagem" name="mensagem" rotextareaws="4" cols="50" required></textarea>
-        <br>
+        <div class="input-grupo">
+          <label class="label">Email address</label>
+          <input class="input">
+        </div>
 
-        <button class="botao-enviar">
-          <span class="shadow"></span>
-          <span class="edge"></span>
-          <span class="front">
-            Push Me
-          </span>
-        </button>
+        <div class="botao-div">
+          <button class="botao-enviar">
+            <span class="shadow"></span>
+            <span class="edge"></span>
+            <span class="front">
+              ENVIAR
+            </span>
+          </button>
+        </div>
 
 
       </form>
