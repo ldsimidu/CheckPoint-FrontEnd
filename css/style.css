@@ -310,13 +310,6 @@ button:active {
     border-radius: 20px;
 }
 
-.box-texto{
-    display: flex;
-    align-items: center;
-    justify-content: center ;
-    position: fixed;
-}
-
 
 .botao-div {
     
