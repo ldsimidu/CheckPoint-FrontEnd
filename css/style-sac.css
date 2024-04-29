@@ -1,9 +1,93 @@
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body{
+  font-family: "Comfortaa";
+}
+
 #field1 {
     margin-right: -7px;
   }
 
   #h1 {
     color: #af4c65;
+  }
+
+
+  .wave-grupo {
+    position: relative;
+    padding-bottom: 15px;
+  }
+  
+  .wave-grupo .input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+  }
+  
+  .wave-grupo .input:focus {
+    outline: none;
+  }
+  
+  .wave-grupo .label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-grupo .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+  }
+  
+  .wave-grupo .input:focus ~ label .label-char,
+  .wave-grupo .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #5264AE;
+  }
+  
+  .wave-grupo .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+  }
+  
+  .wave-grupo .bar:before,.wave-grupo .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-grupo .bar:before {
+    left: 50%;
+  }
+  
+  .wave-grupo .bar:after {
+    right: 50%;
+  }
+  
+  .wave-grupo .input:focus ~ .bar:before,
+  .wave-grupo .input:focus ~ .bar:after {
+    width: 50%;
   }
 
   section {
@@ -44,43 +128,97 @@
     margin-top: 50px;
 }
 
-.div-n {
-  font-weight: bold;
-}
 
-.Submit {
-  width: 120px;
-  height: 40px;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.13);
+
+
+
+.botao-enviar {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  font-weight: 600;
+  float: center;
+  position: relative;
+  background: transparent;
+  padding: 0px;
+  border: none;
   cursor: pointer;
+  outline-offset: 4px;
+  outline-color: deeppink;
+  transition: filter 250ms;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: hsl(226, 25%, 69%);
+  border-radius: 8px;
+  filter: blur(2px);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    to right,
+    hsl(248, 39%, 39%) 0%,
+    hsl(248, 39%, 49%) 8%,
+    hsl(248, 39%, 39%) 92%,
+    hsl(248, 39%, 29%) 100%
+  );
+}
+
+.front {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  background: hsl(248, 53%, 58%);
+  padding: 16px 32px;
   color: white;
-  background: linear-gradient(to left,#532531,#af4c65);
-  letter-spacing: 0.7px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
-.Submit:hover .arrow {
-  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.botao-enviar:hover {
+  filter: brightness(110%);
 }
 
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: translateX(0px);
-    opacity: 1;
-  }
+.botao-enviar:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
-.Submit:active {
-  transform: scale(0.97);
+.botao-enviar:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.botao-enviar:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.botao-enviar:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.botao-enviar:focus:not(:focus-visible) {
+  outline: none;
 }
