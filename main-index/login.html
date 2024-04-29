@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="../css/style-log.css">
     <link rel="stylesheet" href="../css/style.css">
 
@@ -13,7 +13,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
 
 </head>
@@ -23,14 +25,18 @@
     <nav id="navbar">
         <img id="nav-img" src="../img/icons/wine-glass.png" alt="wine">
         <ul>
-            <li><a href="../index.html"> <img class="img-user" src="../img/icons/home.png" alt="Foto de Usuário"> Home</a></li>
-            <li><a href="sac.html"> <img class="img-user" src="../img/icons/customer.png" alt="Foto de SAC"> SAC</a></li>
+            <li><a href="../index.html"> <img class="img-user" src="../img/icons/home.png" alt="Foto de Usuário">
+                    Home</a></li>
+            <li><a href="sac.html"> <img class="img-user" src="../img/icons/customer.png" alt="Foto de SAC"> SAC</a>
+            </li>
             <li><a href="quiz.html"> <img class="img-user" src="../img/icons/quiz.png" alt="Foto de Quiz"> Quiz</a></li>
-            <li><a href="signup.html"> <img class="img-user" src="../img/icons/new.png" alt="Foto de SignUp"> SignUp</a></li>
-            <li><a href="login.html"> <img class="img-user" src="../img/icons/enter.png" alt="Foto de LogIn"> LogIn</a></li>
+            <li><a href="signup.html"> <img class="img-user" src="../img/icons/new.png" alt="Foto de SignUp"> SignUp</a>
+            </li>
+            <li><a href="login.html"> <img class="img-user" src="../img/icons/enter.png" alt="Foto de LogIn"> LogIn</a>
+            </li>
         </ul>
     </nav>
-    
+
     <br><br><br>
     <h1>Coloque seu login</h1>
     <header>
@@ -39,9 +45,13 @@
             <legend>
                 <h2>Login</h2>
             </legend>
-            <input type="text" name="e-mail" placeholder="Seu e-mail cadastrado" required>
+            <div class="textInputWrapper">
+                <input placeholder="Seu e-mail cadastrado" type="text" class="textInput">
+            </div>
             <br>
-            <input type="text" name="Senha" placeholder="Digite sua Senha" required>
+            <div class="textInputWrapper">
+                <input placeholder="Sua Senha" type="text" class="textInput">
+            </div>
             <br><br>
             <button type="button" onclick="window.location.href='../connected-index/connect-index.html'">Login</button>
             <br><br>
@@ -49,7 +59,7 @@
             </fieldset>
         </form>
     </header>
-    
+
     <footer id="footer-log">
         <p style="font-size: 15px; text-align: center;">Todos os diretos Vinheria Agnello</p>
     </footer>
