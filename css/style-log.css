@@ -94,7 +94,7 @@ body {
     position: relative;
     width: 180px;
     margin: 5px 5px;
-    --accent-color: #af4c65;
+    accent-color: #af4c65;
   }
   
   .textInputWrapper:before {
