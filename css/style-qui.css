@@ -4,6 +4,7 @@
 
   #h1 {
     color: #af4c65;
+    
   }
 
   section {
@@ -31,7 +32,7 @@
   }
 
   input[type="text"] {
-    width: 298px;
+    width: 670px;
     height: 20px;
   }
 
@@ -92,4 +93,8 @@ input:focus {
 
 .submit:active {
   transform: scale(0.97);
+}
+
+button.submit {
+  float: right;
 }
